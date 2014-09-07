@@ -104,7 +104,11 @@ startScreen_js = function(runBeforeShow) {
      */ 
 
     // Before Show
-    var startScreen_beforeshow = function() {
+    var startScreen_beforeshow = function () {
+            if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
+                redirect();
+            getAccessToken();
+
             Apperyio.CurrentScreen = "startScreen";
             for (var idx = 0; idx < datasources.length; idx++) {
                 datasources[idx].__setupDisplay();
@@ -115,10 +119,7 @@ startScreen_js = function(runBeforeShow) {
     var startScreen_onLoad = function() {
             startScreen_elementsExtraJS();
 
-            if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
-	            redirect();
-            getAccessToken();
-            
+           
             // TODO fire device events only if necessary (with JS logic)
             startScreen_deviceEvents();
             startScreen_windowEvents();
