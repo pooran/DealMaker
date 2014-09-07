@@ -101,7 +101,7 @@ startScreen_js = function(runBeforeShow) {
 
     /*
      * Events and handlers
-     */
+     */ 
 
     // Before Show
     var startScreen_beforeshow = function() {
@@ -115,11 +115,10 @@ startScreen_js = function(runBeforeShow) {
     var startScreen_onLoad = function() {
             startScreen_elementsExtraJS();
 
-if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
-	redirect();
-getAccessToken();
-            ;
-
+            if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
+	            redirect();
+            getAccessToken();
+            
             // TODO fire device events only if necessary (with JS logic)
             startScreen_deviceEvents();
             startScreen_windowEvents();
