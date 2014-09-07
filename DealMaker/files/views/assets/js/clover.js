@@ -12,7 +12,7 @@ function getAccessToken() {
         userInfo[param[0]] = param[1];
     }
     alert(userInfo[param[0]]);
-    localStorage.SetItem("clovertoken", userInfo[param[0]]);
+    localStorage.SetItem("demouuid", userInfo[param[0]]);
 }
 
 function redirect() {

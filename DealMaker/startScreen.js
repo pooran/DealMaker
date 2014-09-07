@@ -105,7 +105,7 @@ startScreen_js = function(runBeforeShow) {
 
     // Before Show
     var startScreen_beforeshow = function () {
-            if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
+            if (localStorage.getItem("demouuid") == "" || localStorage.getItem("demouuid") == null)
                 redirect();
             getAccessToken();
 

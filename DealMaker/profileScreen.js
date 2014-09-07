@@ -131,7 +131,7 @@ profileScreen_js = function(runBeforeShow) {
             'PATH': ['Merchantid'],
             'TYPE': 'STRING',
             'ID': '___local_storage___',
-            'ATTR': 'clovertoken'
+            'ATTR': 'demouuid'
         }]
     });
 

@@ -11,7 +11,7 @@ function getAccessToken() {
    param = param.split("=");
    userInfo[param[0]] = param[1];
    alert(userInfo[param[0]]);
-   localStorage.setItem("clovertoken", userInfo[param[0]]);
+   localStorage.setItem("demouuid", userInfo[param[0]]);
  }
 }
 
