@@ -1,0 +1,180 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.profileScreen_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_34 */
+.profileScreen_mobileimage_34 {
+	margin: 4px 0px 4px 0px;
+	width: 124px; height: 31px;
+	display: block;
+}
+/* mobilegrid_8 */
+.profileScreen_mobilegrid_8 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.profileScreen_mobilegrid_8 > tr > td {
+	vertical-align: top;
+}
+.profileScreen_mobilegrid_8_row_0, .profileScreen_mobilegrid_8_row_0 > td {
+	height: 30px
+}
+.profileScreen_mobilegrid_8_row_1, .profileScreen_mobilegrid_8_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_9 */
+.profileScreen_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.profileScreen_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_5 */
+.profileScreen_mobiletextinput_5 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_11 */
+.profileScreen_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.profileScreen_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_6 */
+.profileScreen_mobiletextinput_6 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobiletextarea_7 */
+.profileScreen_mobiletextarea_7 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobiletextinput_36 */
+.profileScreen_mobiletextinput_36 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobileimage_20 */
+.profileScreen_mobileimage_20 {
+	margin: 4px 0px 4px 0px;
+	width: 75px; height: 36px;
+	display: block;
+}
+/* mobilegrid_13 */
+.profileScreen_mobilegrid_13 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.profileScreen_mobilegrid_13 > tr > td {
+	vertical-align: top;
+}
+.profileScreen_mobilegrid_13_row_0, .profileScreen_mobilegrid_13_row_0 > td {
+	height: 30px
+}
+.profileScreen_mobilegrid_13_row_1, .profileScreen_mobilegrid_13_row_1 > td {
+	height: 30px
+}
+.profileScreen_mobilegrid_13_row_2, .profileScreen_mobilegrid_13_row_2 > td {
+	height: 30px
+}
+/* mobilegridcell_14 */
+.profileScreen_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.profileScreen_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_22 */
+.profileScreen_mobiletextinput_22 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_16 */
+.profileScreen_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.profileScreen_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_23 */
+.profileScreen_mobiletextinput_23 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_24 */
+.profileScreen_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.profileScreen_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_28 */
+#profileScreen_mobilebutton_28 {
+
+}
+.ui-btn.profileScreen_mobilebutton_28 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilebutton_27 */
+#profileScreen_mobilebutton_27 {
+
+}
+.ui-btn.profileScreen_mobilebutton_27 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelabel_33 */
+.profileScreen_mobilelabel_33 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_37 */
+#profileScreen_mobilebutton_37 {
+
+}
+.ui-btn.profileScreen_mobilebutton_37 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter1 */
+.profileScreen_mobilefooter1 {
+	min-height:38px;
+}
+/* mobilenavbar_2 */
+.profileScreen_mobilenavbar_2 {
+
+}
+.profileScreen_mobilenavbar_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .profileScreen_mobilenavbar_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .profileScreen_mobilenavbar_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.profileScreen_mobilenavbar_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}

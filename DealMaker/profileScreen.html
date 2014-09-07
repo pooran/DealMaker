@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            profileScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/clover.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/sinch.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="profileScreen" id="profileScreen"
+        class="type-interior" data-theme="e">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader1" id="profileScreen_mobileheader1" class="profileScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    DealMaker
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="profileScreen_mobilecontainer1" name="mobilecontainer1"
+            class="profileScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="e">
+                <link href="profileScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profileScreen.js">
+                </script>
+                <!-- mobileimage_34 -->
+                <img class="profileScreen_mobileimage_34" src="files/views/assets/image/clover-logo-color.png"
+                id="profileScreen_mobileimage_34" dsid="mobileimage_34" name="mobileimage_34" />
+                <!-- mobilegrid_8 -->
+                <div class="profileScreen_mobilegrid_8_wrapper" data-wrapper-for="mobilegrid_8">
+                    <table id="profileScreen_mobilegrid_8" class="profileScreen_mobilegrid_8" dsid="mobilegrid_8"
+                    name="mobilegrid_8" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="profileScreen_mobilegrid_8_row_0">
+                            <!-- mobilegridcell_9 -->
+                            <td id="profileScreen_mobilegridcell_9" name="mobilegridcell_9" class="profileScreen_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_5 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextinput_5 ">
+                                        <input type="text" name="mobiletextinput_5" dsid="mobiletextinput_5" value="" placeholder="Establishment Name"
+                                        id="profileScreen_mobiletextinput_5" tabindex="1" multiple data-theme="e" class="profileScreen_mobiletextinput_5"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="profileScreen_mobilegrid_8_row_1">
+                            <!-- mobilegridcell_11 -->
+                            <td id="profileScreen_mobilegridcell_11" name="mobilegridcell_11" class="profileScreen_mobilegridcell_11"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_6 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextinput_6 ">
+                                        <input type="text" name="mobiletextinput_6" dsid="mobiletextinput_6" value="" placeholder="Establishment Owner"
+                                        id="profileScreen_mobiletextinput_6" tabindex="2" multiple data-theme="e" class="profileScreen_mobiletextinput_6"
+                                        />
+                                    </div>
+                                    <!-- mobiletextarea_7 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextarea_7 ">
+                                        <textarea name="mobiletextarea_7" id="profileScreen_mobiletextarea_7" tabindex="3"
+                                        dsid="mobiletextarea_7" data-theme="e" placeholder="Address" class="profileScreen_mobiletextarea_7">
+</textarea>
+                                    </div>
+                                    <!-- mobiletextinput_36 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextinput_36 ">
+                                        <input type="text" name="mobiletextinput_36" dsid="mobiletextinput_36" value=""
+                                        placeholder="Phone Number" id="profileScreen_mobiletextinput_36" tabindex="12" multiple
+                                        data-theme="e" class="profileScreen_mobiletextinput_36" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobileimage_20 -->
+                <img class="profileScreen_mobileimage_20" src="files/views/assets/image/logo_297x142_2x.png"
+                id="profileScreen_mobileimage_20" dsid="mobileimage_20" name="mobileimage_20" />
+                <!-- mobilegrid_13 -->
+                <div class="profileScreen_mobilegrid_13_wrapper" data-wrapper-for="mobilegrid_13">
+                    <table id="profileScreen_mobilegrid_13" class="profileScreen_mobilegrid_13" dsid="mobilegrid_13"
+                    name="mobilegrid_13" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="profileScreen_mobilegrid_13_row_0">
+                            <!-- mobilegridcell_14 -->
+                            <td id="profileScreen_mobilegridcell_14" name="mobilegridcell_14" class="profileScreen_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_22 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextinput_22 ">
+                                        <input type="text" name="mobiletextinput_22" dsid="mobiletextinput_22" value="pooran"
+                                        placeholder="Username" id="profileScreen_mobiletextinput_22" tabindex="4" multiple
+                                        data-theme="e" class="profileScreen_mobiletextinput_22" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="profileScreen_mobilegrid_13_row_1">
+                            <!-- mobilegridcell_16 -->
+                            <td id="profileScreen_mobilegridcell_16" name="mobilegridcell_16" class="profileScreen_mobilegridcell_16"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_23 -->
+                                    <div data-role="fieldcontain" class="profileScreen_mobiletextinput_23 ">
+                                        <input type="text" name="mobiletextinput_23" dsid="mobiletextinput_23" value="p00ran"
+                                        placeholder="Password" id="profileScreen_mobiletextinput_23" tabindex="5" multiple
+                                        data-theme="e" class="profileScreen_mobiletextinput_23" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="profileScreen_mobilegrid_13_row_2">
+                            <!-- mobilegridcell_24 -->
+                            <td id="profileScreen_mobilegridcell_24" name="mobilegridcell_24" class="profileScreen_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_28 -->
+                                    <a data-role="button" name="mobilebutton_28" dsid="mobilebutton_28" class="profileScreen_mobilebutton_28"
+                                    id="profileScreen_mobilebutton_28" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-inline="true" data-mini="false" data-theme="e" tabindex="9">
+                                    Register
+                                    </a>
+                                    <!-- mobilebutton_27 -->
+                                    <a data-role="button" name="mobilebutton_27" dsid="mobilebutton_27" class="profileScreen_mobilebutton_27"
+                                    id="profileScreen_mobilebutton_27" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-inline="true" data-mini="false" data-theme="e" tabindex="8">
+                                    Login
+                                    </a>
+                                    <!-- mobilelabel_33 -->
+                                    <div name="mobilelabel_33" id="profileScreen_mobilelabel_33" dsid="mobilelabel_33"
+                                    data-role="appery_label" class="profileScreen_mobilelabel_33">
+                                        Sucessfully logged in
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilebutton_37 -->
+                <a data-role="button" name="mobilebutton_37" dsid="mobilebutton_37" class="profileScreen_mobilebutton_37"
+                id="profileScreen_mobilebutton_37" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="e" tabindex="13">
+                Save Settings
+                </a>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="profileScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="profileScreen_mobilefooter1" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="profileScreen_mobilenavbar_2" name="mobilenavbar_2"
+                dsid="mobilenavbar_2" class="profileScreen_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="e" data-icon="tag" id="profileScreen_mobilenavbaritem_3" dsid="mobilenavbaritem_3"
+                            name="mobilenavbaritem_3">
+                            Deals
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="e" class="ui-btn-active ui-state-persist" data-icon="user" id="profileScreen_mobilenavbaritem_4"
+                            dsid="mobilenavbaritem_4" name="mobilenavbaritem_4">
+                            Profile
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_38 -->
+                        <li>
+                            <a data-theme="e" data-icon="comment" id="profileScreen_mobilenavbaritem_38" dsid="mobilenavbaritem_38"
+                            name="mobilenavbaritem_38">
+                            Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

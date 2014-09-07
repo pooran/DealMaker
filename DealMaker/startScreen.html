@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/clover.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/sinch.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="e">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader1" id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    DealMaker
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class="startScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="e">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilelabel_28 -->
+                <div name="mobilelabel_28" id="startScreen_mobilelabel_28" dsid="mobilelabel_28"
+                data-role="appery_label" class="startScreen_mobilelabel_28">
+                    Deals
+                </div>
+                <!-- mobilecollapsibleset_18 -->
+                <div data-role="collapsible-set" data-theme="e" data-content-theme=e data-collapsed-icon='carat-d'
+                data-expanded-icon='carat-u' name="mobilecollapsibleset_18" id="startScreen_mobilecollapsibleset_18"
+                dsid="mobilecollapsibleset_18" class="startScreen_mobilecollapsibleset_18">
+                    <!-- mobilecollapsblock_19 -->
+                    <div data-role="collapsible" id="startScreen_mobilecollapsblock_19" name="mobilecollapsblock_19"
+                    dsid="mobilecollapsblock_19" data-collapsed="false" data-theme="e" data-content-theme="e"
+                    data-iconpos='right' class="startScreen_mobilecollapsblock_19" reRender='mobilecollapsibleset_18'>
+                        <h3 id="startScreen_mobilecollapsblockheader_20" name="mobilecollapsblockheader_20"
+                        dsid="mobilecollapsblockheader_20">
+                            <!-- mobilegrid_38 -->
+                            <div class="startScreen_mobilegrid_38_wrapper" data-wrapper-for="mobilegrid_38">
+                                <table id="startScreen_mobilegrid_38" class="startScreen_mobilegrid_38" dsid="mobilegrid_38"
+                                name="mobilegrid_38" cellpadding=0 cellspacing=0>
+                                    <col style="width:auto;" />
+                                    <tr class="startScreen_mobilegrid_38_row_0">
+                                        <!-- mobilegridcell_39 -->
+                                        <td id="startScreen_mobilegridcell_39" name="mobilegridcell_39" class="startScreen_mobilegridcell_39"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- mobilelabel_35 -->
+                                                <div name="mobilelabel_35" id="startScreen_mobilelabel_35" dsid="mobilelabel_35"
+                                                data-role="appery_label" class="startScreen_mobilelabel_35">
+                                                    Free muffin on $15 order
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="startScreen_mobilegrid_38_row_1">
+                                        <!-- mobilegridcell_41 -->
+                                        <td id="startScreen_mobilegridcell_41" name="mobilegridcell_41" class="startScreen_mobilegridcell_41"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- mobilelabel_61 -->
+                                                <div name="mobilelabel_61" id="startScreen_mobilelabel_61" dsid="mobilelabel_61"
+                                                data-role="appery_label" class="startScreen_mobilelabel_61">
+                                                    Activate Now
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </h3>
+                        <!-- mobilegrid_76 -->
+                        <div class="startScreen_mobilegrid_76_wrapper" data-wrapper-for="mobilegrid_76">
+                            <table id="startScreen_mobilegrid_76" class="startScreen_mobilegrid_76" dsid="mobilegrid_76"
+                            name="mobilegrid_76" cellpadding=0 cellspacing=0>
+                                <col style="width:auto;" />
+                                <tr class="startScreen_mobilegrid_76_row_0">
+                                    <!-- mobilegridcell_77 -->
+                                    <td id="startScreen_mobilegridcell_77" name="mobilegridcell_77" class="startScreen_mobilegridcell_77"
+                                    colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <!-- mobilelabel_81 -->
+                                            <div name="mobilelabel_81" id="startScreen_mobilelabel_81" dsid="mobilelabel_81"
+                                            data-role="appery_label" class="startScreen_mobilelabel_81">
+                                                Time Active : 7 am to 9 am
+                                            </div>
+                                            <!-- mobilelabel_82 -->
+                                            <div name="mobilelabel_82" id="startScreen_mobilelabel_82" dsid="mobilelabel_82"
+                                            data-role="appery_label" class="startScreen_mobilelabel_82">
+                                                Minimum Order : $15
+                                            </div>
+                                            <!-- mobilelabel_83 -->
+                                            <div name="mobilelabel_83" id="startScreen_mobilelabel_83" dsid="mobilelabel_83"
+                                            data-role="appery_label" class="startScreen_mobilelabel_83">
+                                                Offer : Free Muffin
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="startScreen_mobilegrid_76_row_1">
+                                    <!-- mobilegridcell_79 -->
+                                    <td id="startScreen_mobilegridcell_79" name="mobilegridcell_79" class="startScreen_mobilegridcell_79"
+                                    colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <!-- mobilelabel_84 -->
+                                            <div name="mobilelabel_84" id="startScreen_mobilelabel_84" dsid="mobilelabel_84"
+                                            data-role="appery_label" class="startScreen_mobilelabel_84">
+                                                Claimed: 15 Redeemed : 8
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_85 -->
+                    <div data-role="collapsible" id="startScreen_mobilecollapsblock_85" name="mobilecollapsblock_85"
+                    dsid="mobilecollapsblock_85" data-collapsed="true" data-theme="e" data-content-theme="e"
+                    data-iconpos='right' class="startScreen_mobilecollapsblock_85" reRender='mobilecollapsibleset_18'>
+                        <h3 id="startScreen_mobilecollapsblockheader_86" name="mobilecollapsblockheader_86"
+                        dsid="mobilecollapsblockheader_86">
+                            <!-- mobilegrid_88 -->
+                            <div class="startScreen_mobilegrid_88_wrapper" data-wrapper-for="mobilegrid_88">
+                                <table id="startScreen_mobilegrid_88" class="startScreen_mobilegrid_88" dsid="mobilegrid_88"
+                                name="mobilegrid_88" cellpadding=0 cellspacing=0>
+                                    <col style="width:auto;" />
+                                    <tr class="startScreen_mobilegrid_88_row_0">
+                                        <!-- mobilegridcell_89 -->
+                                        <td id="startScreen_mobilegridcell_89" name="mobilegridcell_89" class="startScreen_mobilegridcell_89"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- mobilelabel_95 -->
+                                                <div name="mobilelabel_95" id="startScreen_mobilelabel_95" dsid="mobilelabel_95"
+                                                data-role="appery_label" class="startScreen_mobilelabel_95">
+                                                    Happy hour 5% off
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="startScreen_mobilegrid_88_row_1">
+                                        <!-- mobilegridcell_91 -->
+                                        <td id="startScreen_mobilegridcell_91" name="mobilegridcell_91" class="startScreen_mobilegridcell_91"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- mobilelabel_96 -->
+                                                <div name="mobilelabel_96" id="startScreen_mobilelabel_96" dsid="mobilelabel_96"
+                                                data-role="appery_label" class="startScreen_mobilelabel_96">
+                                                    Deactivate Now
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </h3>
+                        <!-- mobilegrid_98 -->
+                        <div class="startScreen_mobilegrid_98_wrapper" data-wrapper-for="mobilegrid_98">
+                            <table id="startScreen_mobilegrid_98" class="startScreen_mobilegrid_98" dsid="mobilegrid_98"
+                            name="mobilegrid_98" cellpadding=0 cellspacing=0>
+                                <col style="width:auto;" />
+                                <tr class="startScreen_mobilegrid_98_row_0">
+                                    <!-- mobilegridcell_99 -->
+                                    <td id="startScreen_mobilegridcell_99" name="mobilegridcell_99" class="startScreen_mobilegridcell_99"
+                                    colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <!-- mobilelabel_97 -->
+                                            <div name="mobilelabel_97" id="startScreen_mobilelabel_97" dsid="mobilelabel_97"
+                                            data-role="appery_label" class="startScreen_mobilelabel_97">
+                                                Time : 10 am to 5pm
+                                            </div>
+                                            <!-- mobilelabel_103 -->
+                                            <div name="mobilelabel_103" id="startScreen_mobilelabel_103" dsid="mobilelabel_103"
+                                            data-role="appery_label" class="startScreen_mobilelabel_103">
+                                                Applicable : Weekdays
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="startScreen_mobilegrid_98_row_1">
+                                    <!-- mobilegridcell_101 -->
+                                    <td id="startScreen_mobilegridcell_101" name="mobilegridcell_101" class="startScreen_mobilegridcell_101"
+                                    colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <!-- mobilelabel_104 -->
+                                            <div name="mobilelabel_104" id="startScreen_mobilelabel_104" dsid="mobilelabel_104"
+                                            data-role="appery_label" class="startScreen_mobilelabel_104">
+                                                Claimed : 5 Redeemed : 0
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilebutton_29 -->
+                <a data-role="button" name="mobilebutton_29" dsid="mobilebutton_29" class="startScreen_mobilebutton_29"
+                id="startScreen_mobilebutton_29" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="e" tabindex="3">
+                Add Deal
+                </a>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="startScreen_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="startScreen_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="e" class="ui-btn-active ui-state-persist" data-icon="tag" id="startScreen_mobilenavbaritem_3"
+                            dsid="mobilenavbaritem_3" name="mobilenavbaritem_3">
+                            Deals
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="e" data-icon="user" id="startScreen_mobilenavbaritem_4" dsid="mobilenavbaritem_4"
+                            name="mobilenavbaritem_4">
+                            Profile
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_105 -->
+                        <li>
+                            <a data-theme="e" data-icon="comment" id="startScreen_mobilenavbaritem_105" dsid="mobilenavbaritem_105"
+                            name="mobilenavbaritem_105">
+                            Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

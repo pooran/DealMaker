@@ -1,0 +1,57 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.chatScreen_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel_106 */
+.chatScreen_mobilelabel_106 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_109 */
+.chatScreen_mobilelabel_109 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 10px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_107 */
+.chatScreen_mobilelabel_107 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: right; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_110 */
+.chatScreen_mobilelabel_110 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: right; font-family: Helvetica; font-size: 10px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter1 */
+.chatScreen_mobilefooter1 {
+	min-height:38px;
+}
+/* mobilenavbar_2 */
+.chatScreen_mobilenavbar_2 {
+
+}
+.chatScreen_mobilenavbar_2 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .chatScreen_mobilenavbar_2 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .chatScreen_mobilenavbar_2 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.chatScreen_mobilenavbar_2 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}

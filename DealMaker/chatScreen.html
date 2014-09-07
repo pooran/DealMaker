@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            chatScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/clover.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/sinch.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="chatScreen" id="chatScreen"
+        class="type-interior" data-theme="e">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader1" id="chatScreen_mobileheader1" class="chatScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    DealMaker
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="chatScreen_mobilecontainer1" name="mobilecontainer1"
+            class="chatScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="e">
+                <link href="chatScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="chatScreen.js">
+                </script>
+                <!-- mobilelabel_106 -->
+                <div name="mobilelabel_106" id="chatScreen_mobilelabel_106" dsid="mobilelabel_106"
+                data-role="appery_label" class="chatScreen_mobilelabel_106">
+                    Aron : Hi, do you sell Blueberry Muffins?
+                </div>
+                <!-- mobilelabel_109 -->
+                <div name="mobilelabel_109" id="chatScreen_mobilelabel_109" dsid="mobilelabel_109"
+                data-role="appery_label" class="chatScreen_mobilelabel_109">
+                    8.30am
+                </div>
+                <!-- mobilelabel_107 -->
+                <div name="mobilelabel_107" id="chatScreen_mobilelabel_107" dsid="mobilelabel_107"
+                data-role="appery_label" class="chatScreen_mobilelabel_107">
+                    Yes we do. That is our specialty
+                </div>
+                <!-- mobilelabel_110 -->
+                <div name="mobilelabel_110" id="chatScreen_mobilelabel_110" dsid="mobilelabel_110"
+                data-role="appery_label" class="chatScreen_mobilelabel_110">
+                    8.31am
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="chatScreen_mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="chatScreen_mobilefooter1" data-theme="e">
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="chatScreen_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="chatScreen_mobilenavbar_2" data-theme="e" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="e" data-icon="tag" id="chatScreen_mobilenavbaritem_3" dsid="mobilenavbaritem_3"
+                            name="mobilenavbaritem_3">
+                            Deals
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="e" data-icon="user" id="chatScreen_mobilenavbaritem_4" dsid="mobilenavbaritem_4"
+                            name="mobilenavbaritem_4">
+                            Profile
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_105 -->
+                        <li>
+                            <a data-theme="e" class="ui-btn-active ui-state-persist" data-icon="comment" id="chatScreen_mobilenavbaritem_105"
+                            dsid="mobilenavbaritem_105" name="mobilenavbaritem_105">
+                            Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
