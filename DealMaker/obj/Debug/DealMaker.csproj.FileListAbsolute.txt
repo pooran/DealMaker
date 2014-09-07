@@ -33,3 +33,4 @@ d:\techcrunch\DealMaker\DealMaker\bin\EntityFramework.dll
 d:\techcrunch\DealMaker\DealMaker\bin\EntityFramework.SqlServer.dll
 d:\techcrunch\DealMaker\DealMaker\bin\EntityFramework.xml
 d:\techcrunch\DealMaker\DealMaker\bin\EntityFramework.SqlServer.xml
+d:\techcrunch\DealMaker\DealMaker\obj\Debug\DealMaker.csprojResolveAssemblyReference.cache
