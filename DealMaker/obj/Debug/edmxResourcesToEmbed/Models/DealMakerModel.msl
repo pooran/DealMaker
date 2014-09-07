@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DealMakerEntityModelStoreContainer" CdmEntityContainer="DealMakerEntities">
+    <EntitySetMapping Name="Creds">
+      <EntityTypeMapping TypeName="DealMakerEntityModel.Cred">
+        <MappingFragment StoreEntitySet="Creds">
+          <ScalarProperty Name="Merchantid" ColumnName="Merchantid" />
+          <ScalarProperty Name="EstbName" ColumnName="EstbName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="EstbOwner" ColumnName="EstbOwner" />
+          <ScalarProperty Name="SinchUsername" ColumnName="SinchUsername" />
+          <ScalarProperty Name="SinchPassword" ColumnName="SinchPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deals">
+      <EntityTypeMapping TypeName="DealMakerEntityModel.Deal">
+        <MappingFragment StoreEntitySet="Deal">
+          <ScalarProperty Name="DealId" ColumnName="DealId" />
+          <ScalarProperty Name="Merchantid" ColumnName="Merchantid" />
+          <ScalarProperty Name="DealType" ColumnName="DealType" />
+          <ScalarProperty Name="DealValidityFrom" ColumnName="DealValidityFrom" />
+          <ScalarProperty Name="DealValidateTo" ColumnName="DealValidateTo" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="IsPercentage" ColumnName="IsPercentage" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

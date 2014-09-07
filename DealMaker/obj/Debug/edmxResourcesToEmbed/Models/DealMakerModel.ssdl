@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DealMakerEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Creds">
+    <Key>
+      <PropertyRef Name="Merchantid" />
+    </Key>
+    <Property Name="Merchantid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EstbName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="EstbOwner" Type="nvarchar" MaxLength="50" />
+    <Property Name="SinchUsername" Type="nvarchar" MaxLength="50" />
+    <Property Name="SinchPassword" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="DealId" />
+    </Key>
+    <Property Name="DealId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Merchantid" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DealType" Type="int" Nullable="false" />
+    <Property Name="DealValidityFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="DealValidateTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Days" Type="int" />
+    <Property Name="IsPercentage" Type="bit" />
+    <Property Name="Value" Type="float" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Deal_Creds">
+    <End Role="Creds" Type="Self.Creds" Multiplicity="1" />
+    <End Role="Deal" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Creds">
+        <PropertyRef Name="Merchantid" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="Merchantid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DealMakerEntityModelStoreContainer">
+    <EntitySet Name="Creds" EntityType="Self.Creds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deal" EntityType="Self.Deal" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Deal_Creds" Association="Self.FK_Deal_Creds">
+      <End Role="Creds" EntitySet="Creds" />
+      <End Role="Deal" EntitySet="Deal" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DealMakerEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cred">
+    <Key>
+      <PropertyRef Name="Merchantid" />
+    </Key>
+    <Property Name="Merchantid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstbName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EstbOwner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SinchUsername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SinchPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Deals" Relationship="Self.FK_Deal_Creds" FromRole="Creds" ToRole="Deal" />
+  </EntityType>
+  <EntityType Name="Deal">
+    <Key>
+      <PropertyRef Name="DealId" />
+    </Key>
+    <Property Name="DealId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Merchantid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DealType" Type="Int32" Nullable="false" />
+    <Property Name="DealValidityFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DealValidateTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Days" Type="Int32" />
+    <Property Name="IsPercentage" Type="Boolean" />
+    <Property Name="Value" Type="Double" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Cred" Relationship="Self.FK_Deal_Creds" FromRole="Deal" ToRole="Creds" />
+  </EntityType>
+  <Association Name="FK_Deal_Creds">
+    <End Role="Creds" Type="Self.Cred" Multiplicity="1" />
+    <End Role="Deal" Type="Self.Deal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Creds">
+        <PropertyRef Name="Merchantid" />
+      </Principal>
+      <Dependent Role="Deal">
+        <PropertyRef Name="Merchantid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DealMakerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Creds" EntityType="Self.Cred" />
+    <EntitySet Name="Deals" EntityType="Self.Deal" />
+    <AssociationSet Name="FK_Deal_Creds" Association="Self.FK_Deal_Creds">
+      <End Role="Creds" EntitySet="Creds" />
+      <End Role="Deal" EntitySet="Deals" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
