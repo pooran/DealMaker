@@ -11,6 +11,7 @@ function getAccessToken() {
    param = param.split("=");
    userInfo[param[0]] = param[1];
    alert(userInfo[param[0]]);
+   x = userInfo[param[0]];
  }
 }
 
