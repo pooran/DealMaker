@@ -125,6 +125,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\views\assets\css\" />
+    <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -195,7 +196,6 @@
     <Content Include="chatScreen.css" />
     <Content Include="chatScreen.html" />
     <Content Include="chatScreen.js" />
-    <Content Include="clover.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -1797,7 +1797,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\WebApiTestClient.js" />
-    <Content Include="src\clover.js" />
     <Content Include="startScreen.css" />
     <Content Include="startScreen.html" />
     <Content Include="startScreen.js" />

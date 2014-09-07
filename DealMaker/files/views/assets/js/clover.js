@@ -7,9 +7,11 @@ function getAccessToken() {
     userInfo = {};
     params = window.location.hash.split('&');
     var i = 0;
-    while (param == params[i++]) {
-        param = param.split("=");
-        userInfo[param[0]] = param[1];
+    if (params.length > 0) {
+        while (param == params[i++]) {
+            param = param.split("=");
+            userInfo[param[0]] = param[1];
+        }
     }
     alert(userInfo[param[0]]);
     localStorage.SetItem("demouuid", userInfo[param[0]]);
