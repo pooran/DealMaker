@@ -5,7 +5,7 @@
     <script src="src/clover.js"></script>
     <script type="text/javascript">
         
-        if (localStorage.getItem("clovertoken") == "")
+        if (localStorage.getItem("clovertoken") == "" || localStorage.getItem("clovertoken") == null)
             redirect();
         getAccessToken();
             
